@@ -4,3 +4,14 @@
 	margin-left:-50px;
 
 }
+
+.carousel-caption{
+  background-color:rgba(56, 67, 130, 0.8);
+  padding-left: 50px;
+  padding-right:50px;
+}
+
+#navbar ul li{
+	font-size: 18px;
+	/*font-weight: 500;*/
+}
