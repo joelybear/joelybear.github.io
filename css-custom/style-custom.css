@@ -1,9 +1,17 @@
 #nav-logo {
-	max-height:250px;
+	max-height:80px;
+	min-height:80px;
 	margin-top:-30px;
-	margin-left:-50px;
+	margin-left:0px;
 
 }
+
+#nav-name{
+	width:125px;
+	height:auto;
+	margin-top:-25px;
+}
+
 
 .carousel-caption{
   background-color:rgba(56, 67, 130, 0.8);
@@ -13,5 +21,32 @@
 
 #navbar ul li{
 	font-size: 18px;
-	/*font-weight: 500;*/
+	font-weight: 500;
+}
+
+.social{
+	height: 30px;
+	margin-top:-5px;
+	/*margin-bottom:-15px;*/
+}
+
+
+#navbar .navbar-social li a{
+	/*margin-bottom:0px;*/
+	padding-bottom:35px;
+	/*background-color:blue;*/
+}
+
+@media (min-width: 768px) {
+	#nav-logo {
+		/*position:relative;*/
+		display:block;
+		max-height:250px;
+		min-height:80px;
+		margin-top:-30px;
+		/*width:100%;*/
+		/*background-color: green;*/
+		/*margin-left:-1300px;*/
+
+	}
 }
