@@ -1,3 +1,6 @@
+
+
+/*
 $(window).scroll(function() {
   $('#nav-logo').stop()
     if ( $(window).width()>=768){
@@ -34,3 +37,5 @@ $(window).scroll(function() {
   }
 }
 )
+
+*/
