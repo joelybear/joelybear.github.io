@@ -12,6 +12,14 @@ body {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.carousel-caption p{
+  display:none;
+}
+
+.carousel-caption h1{
+  font-size: 21px;
+}
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -39,7 +47,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 250px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -47,9 +55,13 @@ body {
   z-index: 10;
 }
 
+.carousel-caption .btn{
+  margin-bottom: 20px;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 250px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -100,8 +112,25 @@ body {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (min-width: 480px){
 
+  .carousel-caption h1{
+    font-size: 36px;
+  }
+
+
+
+}
 @media (min-width: 768px) {
+  .carousel-caption p {
+    display:block;
+  }
+  .carousel {
+    height: 450px;
+  }
+  .carousel .item {
+    height: 450px;
+  }
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
