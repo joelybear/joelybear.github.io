@@ -1,2 +1,3 @@
 Redirect 301 /nextsession https://www.facebook.com/events/152637498475663/
+Redirect 301 /mitzvahday http://www.joelybear.org.uk/2016_11_Mitzvah_Day.html
 ErrorDocument 404 /index.html
