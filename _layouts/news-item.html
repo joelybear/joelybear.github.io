@@ -2,9 +2,16 @@
 layout: default
 ---
 <div class = "container">
-  <!-- {% if page.expires <= site.time %}
-    This page has expired. Some of the content may now be out of date.
-  {% endif %} -->
+
+  {% assign curr_date = site.time | date: "%Y-%m-%d" %}
+  {% assign expiry = page.expires | date: "%Y-%m-%d" %}
+    {% if curr_date > expiry %}
+    <div class = "row">
+      <div class = "alert alert-info" style = "margin-top:20px; margin-bottom:0px">
+        <span class = "glyphicon glyphicon-info-sign" aria-hiddne="true"></span> This post has been marked as 'expired'. Please note that some content may be out of date.
+      </div>
+    </div>
+    {% endif %}
   <!--TODO code for expired item-->
   <div class = "row">
     <h1>{{ page.title }}</h1>
