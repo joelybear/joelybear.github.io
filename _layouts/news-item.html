@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class = "container">
+  {% if page.expires <= site.time %}
+    This page has expired. Some of the content may now be out of date.
+  {% endif %}
+  <!--TODO code for expired item-->
+  <div class = "row">
+    <h1>{{ page.title }}</h1>
+
+    <p class = "lead">{{ page.leading-text }}</p>
+  </div>
+
+  {{ content }}
+
+</div>
