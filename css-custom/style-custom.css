@@ -26,7 +26,7 @@ footer{
   padding-left: 50px;
   padding-right:50px;
 }
-.navbar .navbar-default .navbar-fixed-top {
+.navbar, .navbar-default, .navbar-fixed-top {
 	box-shadow: 0px -24px 93px 8px #000000;
 }
 #navbar ul li{
