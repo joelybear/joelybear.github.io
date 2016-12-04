@@ -26,7 +26,9 @@ footer{
   padding-left: 50px;
   padding-right:50px;
 }
-
+#navbar {
+	box-shadow: 0px -24px 93px 8px #000000;
+}
 #navbar ul li{
 	font-size: 18px;
 	font-weight: 500;
