@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class = "container">
- 
+
   {% assign curr_date = site.time | date: "%Y-%m-%d" %}
   {% assign expiry = page.expires | date: "%Y-%m-%d" %}
     {% if curr_date > expiry %}
@@ -15,6 +15,8 @@ layout: default
   <!--TODO code for expired item-->
   <div class = "row">
     <h1>{{ page.title }}</h1>
+    <h2>{{ site.time }}</h2>
+    <h3>{{ page.expires }}</h3>
 
     <p class = "lead">{{ page.leading-text }}</p>
   </div>
