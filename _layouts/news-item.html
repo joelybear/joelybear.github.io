@@ -1,25 +1,25 @@
 ---
 layout: default
 ---
-<div class = "container">
+<!-- <div class = "container"> -->
 
   {% assign curr_date = site.time | date: "%Y-%m-%d" %}
   {% assign expiry = page.expires | date: "%Y-%m-%d" %}
     {% if curr_date > expiry %}
     <div class = "row">
-      <div class = "alert alert-info" style = "margin-top:20px; margin-bottom:0px">
-        <span class = "glyphicon glyphicon-info-sign" aria-hiddne="true"></span> This post has been marked as 'archived'. Please be aware that some content may now be out of date.
+      <div class = "col-md-12">
+        <div class = "alert alert-info" style = "margin-top:20px; margin-bottom:0px">
+          <span class = "glyphicon glyphicon-info-sign" aria-hiddne="true"></span> This post has been marked as 'archived'. Please be aware that some content may now be out of date.
+        </div>
       </div>
     </div>
     {% endif %}
   <!--TODO code for expired item-->
   <div class = "row">
-    <h1>{{ page.title }}</h1>
-
-
-    <p class = "lead">{{ page.leading-text }}</p>
+    <div class = "col-md-12">
+      <h1>{{ page.title }}</h1>
+      <p class = "lead">{{ page.leading-text }}</p>
+    </div>
   </div>
-  <div class = "row">
     {{ content }}
-  </div>
-</div>
+<!-- </div> -->
