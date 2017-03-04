@@ -1,15 +1,14 @@
 ---
-layout: default
+layout: master
 ---
-</div> <!-- this is a hack to make just the banner image full width-->
 <!-- Header image -->
 <div class="row">
   <div id="header-image" style="background-image:url({{ page.cover-image }})">
-    <div class="container">
+    <div class="container"> <!--this is wrong but meh it works-->
       <h1>{{ page.title }}</h1>
     </div>
   </div>
 </div>
 <div class = "container">
-
-{{ content }}
+  {{ content }}
+</div>
