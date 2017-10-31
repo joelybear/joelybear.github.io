@@ -1,4 +1,4 @@
 gems:
  - jekyll-redirect-from
-url: www.joelybear.org.uk
+url: http://www.joelybear.org.uk
 permalink: /:title
