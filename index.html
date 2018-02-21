@@ -7,14 +7,16 @@ nav-weight: 10
 ---
     <!-- Carousel================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      {% assign carouselItems = site.posts | where:"expired","true" %}
+
+
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+        {% for post in carouselItems %}
+        <li data-target="#myCarousel" data-slide-to="{% forloop.index0 %}"{% if forloop.index == 1 %} class="active">{% endif %}</li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        {% for post in site.posts %}
+        {% for post in carouselItems %}
         <div class="item{% if forloop.index == 1 %} active{% endif %}">
           <img class="first-slide" src="{{ post.cover-image s}}" alt="Photo of a blood donor and a donor carer">
           <div class="container">
