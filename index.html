@@ -8,7 +8,7 @@ nav-weight: 10
     <!-- Carousel================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-      {% assign carouselItems = site.posts | where_exp: "item", "(site.time | date: "%Y-%m-%d") < (item.expires | date: "%Y-%m-%d")" %}
+      {% assign carouselItems = site.posts | where_exp: "item", "site.time | date: "%Y-%m-%d" < item.expires | date: "%Y-%m-%d"" %}
 
 
       <!-- Indicators -->
