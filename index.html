@@ -16,12 +16,12 @@ nav-weight: 10
       <div class="carousel-inner" role="listbox">
         {% for post in site.posts %}
         <div class="item{% if forloop.index == 1 %} active{% endif %}">
-          <img class="first-slide" src="{{post.cover-image}}" alt="Photo of a blood donor and a donor carer">
+          <img class="first-slide" src="{{ post.cover-image s}}" alt="Photo of a blood donor and a donor carer">
           <div class="container">
             <div class="carousel-caption">
-              <h1>{{post.title}}</h1>
-              <p>{{post.leading-text}}</p>
-              <a class="btn btn-lg btn-primary" href="{{post.permalink}}" role="button">Read more</a>
+              <h1>{{ post.title }}</h1>
+              <p>{{ post.leading-text }}</p>
+              <a class="btn btn-lg btn-primary" href="{{ post.url }}" role="button">Read more</a>
             </div>
           </div>
         </div>
