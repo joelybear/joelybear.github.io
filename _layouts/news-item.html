@@ -3,7 +3,7 @@ layout: default
 ---
   {% assign curr_date = site.time | date: "%Y-%m-%d" %}
   {% assign expiry = page.expires | date: "%Y-%m-%d" %}
-  {% assign expired = curr_date > expiry %}
+  {% assign page.expired = curr_date > expiry %}
   {% if expired %}
   <div class = "row">
     <div class = "col-md-12">
