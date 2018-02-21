@@ -4,7 +4,7 @@ layout: default
   {% assign curr_date = site.time | date: "%Y-%m-%d" %}
   {% assign expiry = page.expires | date: "%Y-%m-%d" %}
   {% assign page.expired = curr_date > expiry %}
-  {% if expired %}
+  {% if page.expired %}
   <div class = "row">
     <div class = "col-md-12">
       <div class = "alert alert-info" style = "margin-top:20px; margin-bottom:0px">
