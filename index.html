@@ -13,7 +13,7 @@ nav-weight: 10
       <!-- Indicators -->
       <ol class="carousel-indicators">
         {% for post in carouselItems %}
-        <li data-target="#myCarousel" data-slide-to="{% forloop.index0 %}"{% if forloop.index == 1 %} class="active">{% endif %}</li>
+        <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.index == 1 %} class="active">{% endif %}</li>
       </ol>
       <div class="carousel-inner" role="listbox">
         {% for post in carouselItems %}
