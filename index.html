@@ -8,59 +8,43 @@ nav-weight: 10
     <!-- Carousel================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-      {% assign carouselItems = site.posts | where: "feature-on-homepage", "true" %}
+      <!-- {% assign carouselItems = site.posts | where: "feature-on-homepage", "true" %} -->
 
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        {% for post in carouselItems %}
-        <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.index == 1 %} class="active">{% endif %}</li>
+        {% for post in site.posts %}
+          {% assign renderedPosts = 0 %}
+          {% assign curr_date = site.time | date: "%Y-%m-%d" %}
+          {% assign expiry = post.expires | date: "%Y-%m-%d" %}
+          {% if post.feature-on-homepage or curr_date < expiry and renderedPosts < 5 %}
+            {% assign renderedPosts = renderedPosts | plus: 1%}
+            <li data-target="#myCarousel" data-slide-to="{% cycle '0','1','2','3','4' %}"
+            {% cycle 'class="active"', ' ', ' ', ' ', ' ' %}>
+          </li>
+          {% endif %}
         {% endfor %}
       </ol>
       <div class="carousel-inner" role="listbox">
-        {% for post in carouselItems %}
-        <div class="item{% if forloop.index == 1 %} active{% endif %}">
-          <img class="first-slide" src="{{ post.cover-image }}" alt="{{ post.cover-image-alt }}">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>{{ post.title }}</h1>
-              <p>{{ post.leading-text }}</p>
-              <a class="btn btn-lg btn-primary" href="{{ post.url }}" role="button">Read more</a>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-        <!-- <div class="item active">
-          <img class="first-slide" src="img/blooddonor.jpg" alt="Photo of a blood donor and a donor carer">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Save Lives This Mitzvah Day!</h1>
-              <p>This Mitzvah Day, The Joely Bear Appeal would like to invite you to Give Blood and Save Lives!</p>
-              <a class="btn btn-lg btn-primary" href="Mitzvah-Day-2017" role="button">Read more</a>
-              <a class="btn btn-lg btn-primary" href="booking" role="button">Book your appointment</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="img/blood_donation_mum_with_daughter.jpg" alt="Photo of mother donating blood with her daughter by her side">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>169 Rolled Up Their Sleeves for Joely Bear!</h1>
-              <p>169 People came along to donate at Yavneh College in July - including 35 new donors! Click on the link below to view the photos:</p>
-              <a class="btn btn-lg btn-primary" href="https://www.facebook.com/media/set/?set=a.10154786952243683.1073741841.34251068682&type=1&l=16bfd23552" role="button">Photos</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="img/shenley.jpg" alt="Photograph from our Shenley Chapen event">
-          <div class="container">
-            <div class="carousel-caption" >
-              <h1>Joely Bear Celebrates 21st Anniversary</h1>
-              <p>200 people joined us in the beautiful Shenley Chapel to celebrate our 21st birthday! Supporters enjoyed a fish and chips dinner before dancing the night away with the Joely Bear band to some all time favourites.</p>
-              <a class="btn btn-lg btn-primary" href="https://www.facebook.com/media/set/?set=a.10153383383098683.1073741838.34251068682&type=1&l=79028e8612" role="button">Photos</a>
-            </div>
-          </div>
-        </div> -->
+        {% assign featuredPosts = site.posts | sort:'date' | reverse %}
+        {% for post in featuredPosts %}
 
+        {% assign curr_date = site.time | date: "%Y-%m-%d" %}
+        {% assign expiry = post.expires | date: "%Y-%m-%d" %}
+        {% if post.feature-on-homepage or curr_date < expiry %}
+          <div class="item {% cycle 'active', '  ', '  ', '  ', '  ' %}">
+            <img class="first-slide" src="{{ post.cover-image }}" alt="{{ post.cover-image-alt }}">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.leading-text }}</p>
+                <a class="btn btn-lg btn-primary" href="{{ post.url }}" role="button">
+                  {% if post.button-text %}{{post.button-text}}{% else %}Read more{% endif %}
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
