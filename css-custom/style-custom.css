@@ -20,7 +20,9 @@ footer{
 	margin-top:-25px;
 }
 
-
+.btn{
+  white-space: normal;
+}
 .carousel-caption{
   background-color:rgba(56, 67, 130, 0.8);
   padding-left: 50px;
