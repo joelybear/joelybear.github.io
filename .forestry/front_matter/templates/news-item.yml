@@ -1,0 +1,13 @@
+---
+label: News Item
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: list
+  name: redirect_to
+  label: redirect_to
