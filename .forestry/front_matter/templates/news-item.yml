@@ -1,0 +1,22 @@
+---
+label: News Item
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: leading-text
+  label: leading-text
+- type: datetime
+  name: expires
+  label: expires
+- type: list
+  name: redirect_from
+  label: redirect_from
+- type: file
+  name: cover-image
+  label: cover-image
