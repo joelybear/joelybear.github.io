@@ -2,9 +2,6 @@
 title: Joelybear.Github.Io
 timezone: UTC
 collections:
-  _posts:
-    title: Posts
-    output: true
   posts:
     title: Posts
     output: true
