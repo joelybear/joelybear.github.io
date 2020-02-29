@@ -5,6 +5,10 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: banner-image
+  config:
+    required: false
 - type: text
   name: title
   label: title
