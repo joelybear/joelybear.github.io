@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
   {% assign curr_date = site.time | date: "%Y-%m-%d" %}
   {% assign expiry = page.expires | date: "%Y-%m-%d" %}
   {% if curr_date > expiry %}

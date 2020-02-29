@@ -1,14 +1,4 @@
----
-title: Joelybear.Github.Io
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 gems:
-- jekyll-redirect-from
+ - jekyll-redirect-from
 url: http://www.joelybear.org.uk
-permalink: "/:title"
+permalink: /:title
