@@ -21,5 +21,3 @@ fields:
 - type: number
   name: nav-weight
   label: nav-weight
-pages:
-- new-page.md
