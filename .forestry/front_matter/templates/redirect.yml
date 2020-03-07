@@ -11,3 +11,5 @@ fields:
 - type: list
   name: redirect_to
   label: redirect_to
+pages:
+- joely-bear-s-day-at-the-railway.md
