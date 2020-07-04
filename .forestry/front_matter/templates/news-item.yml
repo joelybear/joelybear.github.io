@@ -22,3 +22,13 @@ fields:
 - type: file
   name: cover-image
   label: cover-image
+- name: feature-on-homepage
+  type: boolean
+  label: Feature on Home page
+  description: Toggle whether this news item should appear on the homepage carousel
+- name: button-text
+  type: text
+  config:
+    required: false
+  label: button-text
+  description: Text to display on homepage button
