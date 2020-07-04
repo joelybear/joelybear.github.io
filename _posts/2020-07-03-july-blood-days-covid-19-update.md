@@ -5,7 +5,7 @@ leading-text: Socially distant, still saving lives...
 expires: 2020-07-11 23:00:00 +0000
 redirect_from:
 - "/covid"
-cover-image: "/img/blooddonor.jpg"
+cover-image: "/img/covid-mask.png"
 feature-on-homepage: true
 button-text: Read more
 
