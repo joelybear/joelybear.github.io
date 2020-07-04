@@ -2,7 +2,7 @@
 layout: news-item
 title: 'July Blood Days: COVID-19 Update'
 leading-text: Socially distant, still saving lives...
-expires: 2001-02-11 00:00:00 +0000
+expires: 2020-07-11 23:00:00 +0000
 redirect_from:
 - "/covid"
 cover-image: "/img/blooddonor.jpg"
