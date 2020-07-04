@@ -6,6 +6,8 @@ expires: 2001-02-11 00:00:00 +0000
 redirect_from:
 - "/covid"
 cover-image: "/img/blooddonor.jpg"
+feature-on-homepage: true
+button-text: Read more
 
 ---
 We’re looking forward to welcoming you to our blood donor sessions on Sunday 12th July. 

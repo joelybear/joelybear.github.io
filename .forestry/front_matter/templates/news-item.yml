@@ -32,3 +32,5 @@ fields:
     required: false
   label: button-text
   description: Text to display on homepage button
+pages:
+- _posts/2020-07-03-july-blood-days-covid-19-update.md
