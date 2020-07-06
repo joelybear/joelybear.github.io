@@ -30,7 +30,7 @@ Please only bring children if you are unable to make other childcare provisions 
 
 ### **#3 You must bring a face covering**
 
-Please bring a face covering with you to the donation session. If you attend without a face covering, you will be provided with a mask. You will not be permitted to donate without a face covering.
+Please bring a face covering with you to the donation session. If you attend without a face covering, you will be provided with a mask. You will not be permitted to step into the venue without a face covering. Whilst you are actually donating, you <i>may</i> be allowed to remove your face covering however it should remain in place at all other times whilst inside the donation venue.
 
 ### **#4 Social Distancing**
 
