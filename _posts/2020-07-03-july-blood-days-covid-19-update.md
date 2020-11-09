@@ -1,8 +1,8 @@
 ---
 layout: news-item
-title: 'July Blood Days: COVID-19 Update'
+title: '2020 Blood Days: COVID-19 Update'
 leading-text: Socially distant, still saving lives...
-expires: 2020-07-11 23:00:00 +0000
+expires: 2020-11-16 00:00:00 +0000
 redirect_from:
 - "/covid"
 cover-image: "/img/covid-mask.png"
@@ -10,9 +10,9 @@ feature-on-homepage: true
 button-text: Read more
 
 ---
-We’re looking forward to welcoming you to our blood donor sessions on Sunday 12th July. 
+We’re looking forward to welcoming you to our blood donor sessions on Sunday 15th November.
 
-We are pleased to again be holding two sessions: one at [Yavneh College](https://www.facebook.com/events/193027038770677/) and one at [Edgware Blood Donor Centre](https://www.facebook.com/events/2486849961625719). There are still some appointments available at Edgware - click [here](edgware) to book yours.
+We are pleased to again be holding two sessions: one at [Borehamwood & Elstree Synagogue](https://www.facebook.com/events/404569094070433/) and one at [Edgware Blood Donor Centre](https://www.facebook.com/events/862972244238196/). There are still some appointments available at Edgware - click [here](edgware) to book yours.
 
 We are committed to providing a family-friendly community blood donor session as we have done for the last 25 years. However, we are equally committed to ensuring a safe event given the current pandemic; as such we will have the following changes to our normal set-up for this coming session:
 
